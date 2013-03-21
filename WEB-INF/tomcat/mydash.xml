@@ -1,0 +1,14 @@
+<!-- Maps a URL context under Tomcat to a location on your file system. Please change 'docBase': -->
+<Context docBase="/Users/Eric/proj/mydash" reloadable="true">
+ <Resource 
+   name="jdbc/mydash" 
+   auth="Container" 
+   type="javax.sql.DataSource" 
+   username="root"
+   password="mypass"
+   driverClassName="com.mysql.jdbc.Driver"
+   url="jdbc:mysql://localhost:3306/mydash?useServerPrepStmts=false"
+   maxActive="10"
+   maxIdle="5"
+ />
+</Context>
