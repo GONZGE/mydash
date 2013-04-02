@@ -1,4 +1,4 @@
-﻿<%-- A link for fetching and a button for deleting each item in a listing. --%>
+<%-- A link for fetching and a button for deleting each item in a listing. --%>
 <%@ attribute name="baseURL" required="true" rtexprvalue="true" %>
 <%@ attribute name="id" required="true" rtexprvalue="true" %>
 <%@ include file="/WEB-INF/TagHeader.jspf" %>

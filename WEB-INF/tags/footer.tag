@@ -1,7 +1,9 @@
-﻿<%-- Footer. --%>
-<%@ include file="/WEB-INF/TagHeader.jspf" %>
-<div class="legalese" >
-  <jsp:useBean id="now" class="java.util.Date" />
-  Copyright &copy; <w:showDate name="now" pattern="yyyy" /> 
-  ${web4j_key_for_app_info.author} - <span title="Build Date : ${web4j_key_for_app_info.buildDate}">${web4j_key_for_app_info.name}/${web4j_key_for_app_info.version}</span>
-</div>
+<%@include file="/WEB-INF/TagHeader.jspf"%>
+<jsp:useBean id="now" class="java.util.Date" />
+   </div>
+  </div>
+  <div id="footer" title='Version: 4.5.1.0 - January 21, 2011'>
+  <%-- Copyright &copy; <fmt:formatDate value="${now}" pattern="yyyy" /> Hirondelle Systems
+   - <a href='mailto:support@web4j.com'>Contact</a> --%>
+  </div>
+ </div>

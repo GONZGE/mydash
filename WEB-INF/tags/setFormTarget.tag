@@ -1,4 +1,5 @@
-﻿<%@ attribute name="using" required="true" rtexprvalue="true" %>
+<%-- Set the target for a form. --%>
+<%@ attribute name="using" required="true" rtexprvalue="true" %>
 <%@ include file="/WEB-INF/TagHeader.jspf" %>
 <c:choose>
  <c:when test="${not empty itemForEdit || Operation == 'Change'}">
