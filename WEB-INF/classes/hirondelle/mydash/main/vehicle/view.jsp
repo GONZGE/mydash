@@ -8,15 +8,15 @@
    <table align="center">
        <tr title="Vehicle Name">
            <td><label>Vehicle Name *</label></td>
-           <td><input name="VehicleName" type="text" maxlength="32"></td>
+           <td><input name="VehicleName" type="text" maxlength="50"></td>
        </tr>
        <tr title="Vehicle Make">
            <td><label>Make *</label></td>
-           <td><input name="VehicleMake" type="text" maxlength="32"></td>
+           <td><input name="VehicleMake" type="text" maxlength="30"></td>
        </tr>
        <tr title="Vehicle Model">
            <td><label>Model *</label></td>
-           <td><input name="VehicleModel" type="text" maxlength="32"></td>
+           <td><input name="VehicleModel" type="text" maxlength="30"></td>
        </tr>
        <tr title="Vehicle Year.  Format: YYYY">
            <td><label>Year (YYYY) *</label></td>
@@ -24,7 +24,7 @@
        </tr>
     <tr title="integer">
      <td><label>Mileage *</label></td>
-     <td><input name="Mileage" type="text"  maxlength='10'></td>
+     <td><input name="Mileage" type="text"  maxlength='6'></td>
     </tr>
     <tr>
      <td align="center" colspan=2>
