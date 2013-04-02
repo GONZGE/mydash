@@ -91,14 +91,14 @@ public final class Vehicle {
     private void validateState() throws ModelCtorException {
         ModelCtorException ex = new ModelCtorException();
 
-        if (FAILS == Check.required(fVehicleName, Check.range(0, 32))) {
-            ex.add("Name cannot be longer than 32 characters.");
+        if (FAILS == Check.required(fVehicleName, Check.range(0, 50))) {
+            ex.add("Name cannot be longer than 50 characters.");
         }
-        if (FAILS == Check.required(fVehicleMake, Check.range(0, 32))) {
-            ex.add("Make cannot be longer than 32 characters.");
+        if (FAILS == Check.required(fVehicleMake, Check.range(0, 30))) {
+            ex.add("Make cannot be longer than 30 characters.");
         }
-        if (FAILS == Check.required(fVehicleModel, Check.range(0, 32))) {
-            ex.add("MOdel cannot be longer than 32 characters.");
+        if (FAILS == Check.required(fVehicleModel, Check.range(0, 30))) {
+            ex.add("MOdel cannot be longer than 30 characters.");
         }
         if (FAILS == Check.required(fVehicleYear, Check.range(MIN_YEAR, MAX_YEAR), Check.numDecimalsAlways(0))) {
             ex.add("Year must be between 1900 and 2100.  YYYY Format");
