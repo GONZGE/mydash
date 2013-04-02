@@ -1,4 +1,4 @@
-﻿<%@ page contentType="text/html" %> <%-- must appear first! --%>
+<%@ page contentType="text/html" %> <%-- must appear first! --%>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
 <html>
@@ -10,7 +10,7 @@
 <P>
  <div class='menu-bar'>
   <c:url value="/index.html" var="homeURL"/> <A href='${homeURL}' title='Home page'>Home</a>
-  <c:url value="/mydash/mileage/MileageAction.list" var="listURL"/> <A href='${listURL}' title='List and enter Mileage'>Enter</a>
+  <c:url value="/main/vehicle/VehicleAction.list" var="listURL"/> <A href='${listURL}' title='List and update Vehicles'>My Garage</a>
  </div>
  
 <%-- Display error and information messages. --%>

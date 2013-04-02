@@ -2,6 +2,7 @@ LIST_MILEAGE {
  SELECT id, entry_date, mileage
  FROM mileage
  ORDER BY entry_date DESC
+LIMIT 10
 }
 
 ADD_MILEAGE  {

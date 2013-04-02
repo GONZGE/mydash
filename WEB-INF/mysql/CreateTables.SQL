@@ -9,10 +9,15 @@
 #
 create database mydash CHARACTER SET = utf8;
 use mydash;
-# This is a code table.
-CREATE TABLE mileage (  
-  id MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  entry_date DATE NOT NULL,
-  mileage INT NOT NULL,
-  PRIMARY KEY (id)
+
+CREATE TABLE vehicle(
+  vehicle_id 	MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  vehicle_name  varchar(50) NOT NULL,
+  make          varchar(30) NOT NULL,
+  model         varchar(30) NOT NULL,
+  year          INT NOT NULL,
+  mileage       INT NOT NULL,
+ -- LoginName     VARCHAR(50) NOT NULL, 
+ -- FOREIGN KEY (LoginName) REFERENCES Users(LoginName),
+  PRIMARY KEY (vehicle_id)
 ) Engine=InnoDB;
