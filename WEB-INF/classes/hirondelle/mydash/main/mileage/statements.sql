@@ -7,4 +7,6 @@ LIST_MILEAGE {
 ADD_MILEAGE  {
   -- Id is an autoincrement field, populated automagically by the database.
  INSERT INTO mileage (entry_date, mileage) VALUES (curdate(),?)
+ON DUPLICATE KEY UPDATE id=LAST_INSERT_ID(id), mileage = ?
 }
+

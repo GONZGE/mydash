@@ -22,7 +22,7 @@ final class MileageDAO {
   
   private Object[] baseParamsFrom(Mileage aMileage){
     return new Object[]{ 
-      aMileage.getMileage()
+      aMileage.getMileage(), aMileage.getMileage()
     };
   }
 }
