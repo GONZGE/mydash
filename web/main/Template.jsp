@@ -9,8 +9,8 @@
 <body>
 <P>
  <div class='menu-bar'>
-  <c:url value="/index.html" var="homeURL"/> <A href='${homeURL}' title='Home page'>Home</a>
-  <c:url value="/mydash/mileage/MileageAction.list" var="listURL"/> <A href='${listURL}' title='List and enter Mileage'>Enter</a>
+  <c:url value="/Home.jsp" var="homeURL"/> <A href='${homeURL}' title='Home page'>Home</a>
+  <c:url value="/mydash/mileage/MileageAction.list" var="mileageURL"/> <A href='${mileageURL}' title='List and enter Mileage'>Enter Mileage</a>
  </div>
  
 <%-- Display error and information messages. --%>
