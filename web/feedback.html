@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+		<noscript><link rel="stylesheet" href="css/5grid/core.css" /><link rel="stylesheet" href="css/5grid/core-desktop.css" /><link rel="stylesheet" href="css/5grid/core-1200px.css" /><link rel="stylesheet" href="css/5grid/core-noscript.css" /><link rel="stylesheet" href="css/style.css" /><link rel="stylesheet" href="css/style-desktop.css" /></noscript>
+		<link href="css/formstyle.css" rel="stylesheet" type="text/css" />
+                <script src="css/5grid/jquery.js"></script>
+		<script src="css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none&amp;mobileUI.titleBarHeight=55&amp;mobileUI.openerWidth=66"></script>
+		<!--[if IE 9]><link rel="stylesheet" href="css/style-ie9.css" /><![endif]-->
+<script language="javascript">
+function validateForm1() {
+var x=document.forms["form"]["fname"].value;
+
+if (x==null || x=="") {
+  alert("First name must be filled out");
+  return false;
+  }
+
+}
+function validateForm3() {
+var x=document.forms["form"]["email"].value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+}
+
+function validateForm2() {
+var x=document.forms["form"]["lname"].value;
+if (x==null || x=="") {
+  alert("Last name must be filled out");
+  return false;
+  }
+ }
+ function validateForm() {
+var x=document.forms["form"]["fname"].value;
+var y=document.forms["form"]["lname"].value;
+if (x==null || x=="") {
+  alert("First name must be filled out");
+  return false;
+  }
+if (y==null || y=="") {
+  alert("Last name must be filled out");
+  return false;
+  }
+var z=document.forms["form"]["email"].value;
+var atpos=z.indexOf("@");
+var dotpos=z.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=z.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  } 
+}
+
+</script>
+<script type="text/javscript" src="popup.js"></script>
+
+
+</head>
+
+<body>
+<script type="text/javascript">
+function getCookie(name){
+var re=new RegExp(name+"=([^;]+)");
+var value=re.exec(document.cookie);
+return(value!=null)?unescape(value[1]):null;
+}
+
+function setCookie(name,value){document.cookie=name+"="+escape(value);}
+
+function saveCookie(form){
+setCookie("fname",form.fname.value);
+setCookie("lname",form.lname.value);
+setCookie("email",form.email.value);
+setCookie("comments",form.comments.value);
+return true;
+}
+
+</script>
+    <div id="header-wrapper">
+			<div class="5grid-layout">
+				<div class="row">
+					<div class="12u">
+						
+						<header id="header">
+							<h1><a href="#" class="mobileUI-site-name">MyDash.com</a></h1>
+							<nav class="mobileUI-site-nav">
+								<a href="index.html">Homepage</a>
+                                <a href="form.html" >Sign Up!</a>
+								<a href="login.html">Login!</a>
+                                                                <a href="faq.html">FAQ</a>	
+                                                                <a href="feedback.html" class="current-page-item" >Contact Us</a>								
+							</nav>
+						</header>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main">
+			<div class="5grid-layout">
+				<div class="row main-row">
+					<div class="12u">
+<section>
+<div id="stylized" class="myform">
+<form name="form" id="form" action="feedbackout.html" method="get" onsubmit= "return saveCookie(this); return validateForm();">
+<fieldset id="Personal" >
+<legend><b>Personal Information</b></legend>
+<label for="Firstname" class="icon">First Name:</label><input type="text" name="fname" value="" onfocus="this.value='';" onblur="return validateForm1()"/>
+<label>Last Name:</label><input type="text" name="lname" value="" onfocus="this.value='';" onblur="return validateForm2()"/>
+<label for="email">E-mail:</label><input type="text" name="email" value="" onfocus="this.value='';" onblur="return validateForm3() "/>
+<label for="comments">Comments:</label><br/><textarea type="text" name="comments" value=""></textarea><br/>
+</fieldset>
+<fieldset id="submit">
+<button type="submit" name="submit" class="button" value="Submit" title="Submit Button disabled until form is filled out!" onclick="return validateForm();">Submit</button>
+<button class="button" type="reset" value="Reset">Reset</button>
+</fieldset>
+</form>
+</div>
+</section>
+</div>
+                    </div>
+		</div>
+              </div>                                        
+</body>
+</html>

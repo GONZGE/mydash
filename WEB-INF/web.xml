@@ -46,7 +46,7 @@
         Example :'C:\log\electricity\'.
       </description>
       <param-name>LoggingDirectory</param-name>
-      <param-value>/Users/Eric/logs/mydash/</param-value>
+      <param-value>C:\Users\Owner\Documents\NetBeansProjects\</param-value>
     </init-param>
     <init-param>
       <description>
