@@ -1,0 +1,142 @@
+body{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+p, h1, form, button{border:0; margin:0; padding:0;}
+.spacer{clear:both; height:1px;}
+
+td {
+ vertical-align: top;
+}
+/* ----------- My Form ----------- */
+.myform{
+margin:0 auto;
+width:400px;
+padding:14px;
+}
+
+/* ----------- stylized ----------- */
+#stylized{
+border:solid 2px #b7ddf2;
+background:#ebf4fb;
+}
+#stylized h1 {
+font-size:14px;
+font-weight:bold;
+margin-bottom:8px;
+}
+#stylized p{
+font-size:11px;
+color:#666666;
+margin-bottom:20px;
+border-bottom:solid 1px #b7ddf2;
+padding-bottom:10px;
+}
+#stylized label{
+display:block;
+font-weight:bold;
+text-align:right;
+width:140px;
+float:left;
+}
+#stylized .small{
+color:#666666;
+display:block;
+font-size:11px;
+font-weight:normal;
+text-align:right;
+width:140px;
+}
+#stylized input{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:200px;
+margin:2px 0 20px 10px;
+}
+
+table.report {
+ background-color: #ebf4fb; 
+ border-style: solid;
+ border-width: 2px;
+ border-color: #b7ddf2; 
+ border-collapse: collapse;
+ empty-cells: show; 
+ caption-side: bottom;
+}
+
+table.report td, th {
+ /*white-space: nowrap;*/
+ border: 1px ridge rgb(65%,65%,65%); 
+ padding: 0.30em;
+}
+
+/* no underline for sorting links */
+table.report th a {
+  text-decoration: none;
+}
+table.report th img {
+ padding: 0;
+ margin: 0;
+}
+
+table.report tbody {
+ border: 1px solid black;
+}
+/* 
+Highlighting the row when the cursor hovers above it 
+increases legibility. 
+*/
+table.report tr:hover {
+  background-color: #FFFDE3;
+}
+table.report caption {
+ font-weight: bold;
+ text-align: center;
+ padding: 0.5em;
+}
+table.report caption:after {
+ content : " - ";
+}
+table.report caption:before {
+ content : " - ";
+}
+
+/*
+REPORT panel. Tabbed panel effect, for presenting reports.
+*/
+table.report-panel {
+ border-style: solid;
+ border-width: 1px;
+ border-color: black;
+ border-collapse: collapse;
+ empty-cells: show; 
+ caption-side: bottom;
+}
+
+table.report-panel th {
+ font-weight: bold;
+ background-color: rgb(83%, 83%, 83%); 
+}
+
+table.report-panel th.not-current {
+ background-color: rgb(60%, 60%, 60%); 
+}
+
+form.user-input table {
+ background-color: #ebf4fb;
+ border-style: solid;
+ border-width: 2px; 
+ border-color: #b7ddf2;
+ padding: 1.0em;
+}
+/* improves alignment of form controls */
+form.user-input input {
+ margin: 0;
+}
+
+/* Log off form appearing in main menu.  */
+form.log-off {
+  display:inline;
+}

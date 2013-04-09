@@ -1,8 +1,9 @@
 <c:set value='VehicleAction' var='baseURL'/> 
 <tags:setFormTarget using='${baseURL}' />
+<link rel="stylesheet" href="css/formstyle.css" />
 
 <%-- Form for adds and edits. --%>
-<form action='${formTarget}' method="post" class="user-input"> 
+<form id="form" action='${formTarget}' method="post" class="user-input"> 
   <w:populate using="itemForEdit"> 
    <input name="Id" type="hidden">
    <table align="center">
